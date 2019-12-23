@@ -20,5 +20,6 @@ sudo add-apt-repository \
    stable"
 
 apt update
+apt autoremove -y
 
 docker run hello-world
