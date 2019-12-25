@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# installation automatisée VPS 
+# installation automatisée docker & docker-compose
 
 apt-get update && apt-get upgrade 
 
@@ -28,6 +28,8 @@ curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compo
 
 sudo chmod +x /usr/local/bin/docker-compose
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+
+apt autoremove -y
 
 #end 
     
